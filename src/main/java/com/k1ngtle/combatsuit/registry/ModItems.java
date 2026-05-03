@@ -1,6 +1,7 @@
 package com.k1ngtle.combatsuit.registry;
 
 import com.k1ngtle.combatsuit.CombatSuit;
+import com.k1ngtle.combatsuit.item.FullMaskItem;
 import com.k1ngtle.combatsuit.item.GhostHelmetItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.ArmorItem;
@@ -14,6 +15,9 @@ public class ModItems {
 
     public static final Supplier<Item> COMBAT_HELMET = ITEMS.register("combat_helmet", 
         () -> new GhostHelmetItem(ArmorMaterials.IRON, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final Supplier<Item> COMBAT_FULLMASK = ITEMS.register("combat_fullmask", 
+        () -> new FullMaskItem(ArmorMaterials.IRON, ArmorItem.Type.HELMET, new Item.Properties()));    
 
     // Added missing registrations for other armor pieces
     public static final Supplier<Item> COMBAT_CHESTPLATE = ITEMS.register("combat_chestplate", 

@@ -18,6 +18,7 @@ public class ModCreativeTabs {
             .displayItems((parameters, output) -> {
                 // This is what actually puts the items in the tab
                 output.accept(ModItems.COMBAT_HELMET.get());
+                output.accept(ModItems.COMBAT_FULLMASK.get());
                 output.accept(ModItems.COMBAT_CHESTPLATE.get());
                 output.accept(ModItems.COMBAT_LEGGINGS.get());
                 output.accept(ModItems.COMBAT_BOOTS.get());
