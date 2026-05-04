@@ -23,7 +23,6 @@ public class GhostHelmetItem extends ArmorItem implements GeoItem {
         super(material, type, properties);
     }
 
-    // This links your custom renderer to the item.
     @Override
     public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {
         consumer.accept(new GeoRenderProvider() {
@@ -38,8 +37,6 @@ public class GhostHelmetItem extends ArmorItem implements GeoItem {
             }
         });
     }
-
-    // Note: The inventoryTick method for Night Vision has been completely removed!
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {}
