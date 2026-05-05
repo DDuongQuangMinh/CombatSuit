@@ -3,6 +3,8 @@ package com.k1ngtle.combatsuit.registry;
 import com.k1ngtle.combatsuit.CombatSuit;
 import com.k1ngtle.combatsuit.item.FullMaskItem;
 import com.k1ngtle.combatsuit.item.GhostHelmetItem;
+import com.k1ngtle.combatsuit.item.GhostVestItem;
+
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterials;
@@ -21,7 +23,7 @@ public class ModItems {
 
     // Added missing registrations for other armor pieces
     public static final Supplier<Item> COMBAT_CHESTPLATE = ITEMS.register("combat_chestplate", 
-        () -> new ArmorItem(ArmorMaterials.IRON, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        () -> new GhostVestItem(ArmorMaterials.IRON, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 
     public static final Supplier<Item> COMBAT_LEGGINGS = ITEMS.register("combat_leggings", 
         () -> new ArmorItem(ArmorMaterials.IRON, ArmorItem.Type.LEGGINGS, new Item.Properties()));
