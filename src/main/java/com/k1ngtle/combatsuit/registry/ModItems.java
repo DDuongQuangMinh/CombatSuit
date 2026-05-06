@@ -3,6 +3,7 @@ package com.k1ngtle.combatsuit.registry;
 import com.k1ngtle.combatsuit.CombatSuit;
 import com.k1ngtle.combatsuit.item.FullMaskItem;
 import com.k1ngtle.combatsuit.item.GhostHelmetItem;
+import com.k1ngtle.combatsuit.item.GhostLeggingsItem;
 import com.k1ngtle.combatsuit.item.GhostVestItem;
 
 import net.minecraft.core.registries.Registries;
@@ -26,7 +27,7 @@ public class ModItems {
         () -> new GhostVestItem(ArmorMaterials.IRON, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 
     public static final Supplier<Item> COMBAT_LEGGINGS = ITEMS.register("combat_leggings", 
-        () -> new ArmorItem(ArmorMaterials.IRON, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        () -> new GhostLeggingsItem(ArmorMaterials.IRON, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 
     public static final Supplier<Item> COMBAT_BOOTS = ITEMS.register("combat_boots", 
         () -> new ArmorItem(ArmorMaterials.IRON, ArmorItem.Type.BOOTS, new Item.Properties()));
