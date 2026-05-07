@@ -3,6 +3,8 @@
   "item.combatsuit.combat_helmet": "COD Ghost Helmet",
   "item.combatsuit.combat_fullmask": "COD Full Mask",
   "item.combatsuit.combat_chestplate": "COD Vest",
-  "item.combatsuit.combat_leggings": "Combat Leggings",
-  "item.combatsuit.combat_boots": "Combat Boots"
+  "item.combatsuit.combat_leggings": "COD Leggings",
+  "item.combatsuit.combat_boots": "COD Boots",
+  "item.combatsuit.grass_ghillie_helmet": "Grass Ghillie Helmet",
+  "item.combatsuit.ghillie_armor": "Grass Ghillie Suit"
 }

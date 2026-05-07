@@ -2,6 +2,9 @@ package com.k1ngtle.combatsuit.registry;
 
 import com.k1ngtle.combatsuit.CombatSuit;
 import com.k1ngtle.combatsuit.item.FullMaskItem;
+import com.k1ngtle.combatsuit.item.GhillieArmorItem;
+import com.k1ngtle.combatsuit.item.GhillieSuitItem;
+import com.k1ngtle.combatsuit.item.GhostBootsItem;
 import com.k1ngtle.combatsuit.item.GhostHelmetItem;
 import com.k1ngtle.combatsuit.item.GhostLeggingsItem;
 import com.k1ngtle.combatsuit.item.GhostVestItem;
@@ -20,17 +23,23 @@ public class ModItems {
         () -> new GhostHelmetItem(ArmorMaterials.IRON, ArmorItem.Type.HELMET, new Item.Properties()));
 
     public static final Supplier<Item> COMBAT_FULLMASK = ITEMS.register("combat_fullmask", 
-        () -> new FullMaskItem(ArmorMaterials.IRON, ArmorItem.Type.HELMET, new Item.Properties()));    
+        () -> new FullMaskItem(ArmorMaterials.IRON, ArmorItem.Type.HELMET, new Item.Properties()));
+        
+    // Add this with your other registrations
+    public static final Supplier<Item> GRASS_GHILLIE_HELMET = ITEMS.register("grass_ghillie_helmet", 
+        () -> new GhillieSuitItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET, new Item.Properties()));    
 
-    // Added missing registrations for other armor pieces
     public static final Supplier<Item> COMBAT_CHESTPLATE = ITEMS.register("combat_chestplate", 
         () -> new GhostVestItem(ArmorMaterials.IRON, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final Supplier<Item> GHILLIE_ARMOR = ITEMS.register("ghillie_armor", 
+        () -> new GhillieArmorItem(ArmorMaterials.LEATHER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));    
 
     public static final Supplier<Item> COMBAT_LEGGINGS = ITEMS.register("combat_leggings", 
         () -> new GhostLeggingsItem(ArmorMaterials.IRON, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 
     public static final Supplier<Item> COMBAT_BOOTS = ITEMS.register("combat_boots", 
-        () -> new ArmorItem(ArmorMaterials.IRON, ArmorItem.Type.BOOTS, new Item.Properties()));
+        () -> new GhostBootsItem(ArmorMaterials.IRON, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static void register(net.neoforged.bus.api.IEventBus eventBus) {
         ITEMS.register(eventBus);
