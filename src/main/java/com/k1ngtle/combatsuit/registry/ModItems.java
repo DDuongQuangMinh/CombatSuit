@@ -3,6 +3,8 @@ package com.k1ngtle.combatsuit.registry;
 import com.k1ngtle.combatsuit.CombatSuit;
 import com.k1ngtle.combatsuit.item.FullMaskItem;
 import com.k1ngtle.combatsuit.item.GhillieArmorItem;
+import com.k1ngtle.combatsuit.item.GhillieArmorSnowItem;
+import com.k1ngtle.combatsuit.item.GhillieHelmetSnowItem;
 import com.k1ngtle.combatsuit.item.GhillieSuitItem;
 import com.k1ngtle.combatsuit.item.GhostBootsItem;
 import com.k1ngtle.combatsuit.item.GhostHelmetItem;
@@ -27,13 +29,19 @@ public class ModItems {
         
     // Add this with your other registrations
     public static final Supplier<Item> GRASS_GHILLIE_HELMET = ITEMS.register("grass_ghillie_helmet", 
-        () -> new GhillieSuitItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET, new Item.Properties()));    
+        () -> new GhillieSuitItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET, new Item.Properties()));
+        
+    public static final Supplier<Item> GHILLIE_HELMET_SNOW = ITEMS.register("ghillie_helmet_snow", 
+        () -> new GhillieHelmetSnowItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET, new Item.Properties()));    
 
     public static final Supplier<Item> COMBAT_CHESTPLATE = ITEMS.register("combat_chestplate", 
         () -> new GhostVestItem(ArmorMaterials.IRON, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 
     public static final Supplier<Item> GHILLIE_ARMOR = ITEMS.register("ghillie_armor", 
-        () -> new GhillieArmorItem(ArmorMaterials.LEATHER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));    
+        () -> new GhillieArmorItem(ArmorMaterials.LEATHER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        
+    public static final Supplier<Item> GHILLIE_ARMOR_SNOW = ITEMS.register("ghillie_armor_snow", 
+        () -> new GhillieArmorSnowItem(ArmorMaterials.LEATHER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));    
 
     public static final Supplier<Item> COMBAT_LEGGINGS = ITEMS.register("combat_leggings", 
         () -> new GhostLeggingsItem(ArmorMaterials.IRON, ArmorItem.Type.LEGGINGS, new Item.Properties()));

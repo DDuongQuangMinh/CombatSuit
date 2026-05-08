@@ -24,6 +24,8 @@ public class ModCreativeTabs {
                 output.accept(ModItems.COMBAT_BOOTS.get());
                 output.accept(ModItems.GRASS_GHILLIE_HELMET.get());
                 output.accept(ModItems.GHILLIE_ARMOR.get());
+                output.accept(ModItems.GHILLIE_HELMET_SNOW.get());
+                output.accept(ModItems.GHILLIE_ARMOR_SNOW.get());
             }).build());
 
     public static void register(net.neoforged.bus.api.IEventBus eventBus) {
