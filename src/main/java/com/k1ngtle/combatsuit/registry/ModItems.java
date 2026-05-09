@@ -3,7 +3,9 @@ package com.k1ngtle.combatsuit.registry;
 import com.k1ngtle.combatsuit.CombatSuit;
 import com.k1ngtle.combatsuit.item.FullMaskItem;
 import com.k1ngtle.combatsuit.item.GhillieArmorItem;
+import com.k1ngtle.combatsuit.item.GhillieArmorSandItem;
 import com.k1ngtle.combatsuit.item.GhillieArmorSnowItem;
+import com.k1ngtle.combatsuit.item.GhillieHelmetSandItem;
 import com.k1ngtle.combatsuit.item.GhillieHelmetSnowItem;
 import com.k1ngtle.combatsuit.item.GhillieSuitItem;
 import com.k1ngtle.combatsuit.item.GhostBootsItem;
@@ -41,7 +43,13 @@ public class ModItems {
         () -> new GhillieArmorItem(ArmorMaterials.LEATHER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
         
     public static final Supplier<Item> GHILLIE_ARMOR_SNOW = ITEMS.register("ghillie_armor_snow", 
-        () -> new GhillieArmorSnowItem(ArmorMaterials.LEATHER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));    
+        () -> new GhillieArmorSnowItem(ArmorMaterials.LEATHER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        
+    public static final Supplier<Item> GHILLIE_HELMET_SAND = ITEMS.register("ghillie_helmet_sand", 
+        () -> new GhillieHelmetSandItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final Supplier<Item> GHILLIE_ARMOR_SAND = ITEMS.register("ghillie_armor_sand", 
+        () -> new GhillieArmorSandItem(ArmorMaterials.LEATHER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));    
 
     public static final Supplier<Item> COMBAT_LEGGINGS = ITEMS.register("combat_leggings", 
         () -> new GhostLeggingsItem(ArmorMaterials.IRON, ArmorItem.Type.LEGGINGS, new Item.Properties()));
